@@ -1,0 +1,53 @@
+.logo {
+  height: 30px;
+  margin: 16px;
+  background: #fff;
+}
+
+.layout {
+  font-family: 'Bangers', cursive;
+  font-size: 20px;
+  .sidebar {
+    background: #f32a07;
+  }
+  .site_layout {
+    min-height: 100vh;
+    &_header,
+    &_content {
+      background: #fff;
+    }
+
+    &_header {
+      display: flex;
+      .trigger {
+        padding: 0 24px;
+        font-size: 18px;
+        line-height: 64px;
+        cursor: pointer;
+        transition: color 0.3s;
+      }
+
+      .trigger:hover {
+        color: #f32a07;
+      }
+
+      .top_menu {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+      }
+    }
+
+    &_content {
+      margin: 16px 15px 0;
+      overflow: initial;
+      margin-bottom: 0;
+      padding: 18px;
+    }
+    .ant_layout_footer {
+      padding: 20px 50px;
+      text-align: center;
+    }
+  }
+}
