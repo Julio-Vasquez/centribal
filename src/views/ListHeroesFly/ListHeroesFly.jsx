@@ -32,6 +32,13 @@ const ListHerosFly = () => {
         renderItem={hero => <DisplayHero data={hero} />}
         pagination={{
           pageSize: 5,
+          onChange: () => {
+            window.scroll({
+              top: 0,
+              left: 0,
+              behavior: 'smooth',
+            })
+          },
         }}
       />
     </div>

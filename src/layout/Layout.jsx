@@ -64,7 +64,11 @@ const LayoutCentribal = ({ children }) => {
           ) : (
             <MenuFoldOutlined className={styles.trigger} onClick={toggle} />
           )}
-          <div className={styles.top_menu}>alguna pendejada aqui</div>
+          <div className={styles.top_menu}>
+            <Link to="/">
+              <h1 >SUPERHEROS APP</h1>
+            </Link>
+          </div>
         </Header>
         <Content className={styles.site_layout_content}>{children}</Content>
         <Footer className={styles.ant_layout_footer}>
