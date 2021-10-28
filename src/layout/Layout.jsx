@@ -8,6 +8,7 @@ import {
   MenuUnfoldOutlined,
 } from '@ant-design/icons'
 import { node } from 'prop-types'
+import Logo from '../assets/img/app/superheroes.png'
 
 import { useMediaQuery } from '../hooks/useMediaQuery'
 import styles from './Layout.module.scss'
@@ -34,8 +35,10 @@ const LayoutCentribal = ({ children }) => {
         trigger={null}
         className={styles.sidebar}
       >
-        <Link to="/" style={{ backgroundColor: 'white' }}>
-          <div className={styles.logo} />
+        <Link to="/">
+          <div className={styles.logo}>
+            <img src={Logo} alt="Superheros app" />
+          </div>
         </Link>
         <Menu
           mode="inline"
@@ -66,7 +69,7 @@ const LayoutCentribal = ({ children }) => {
           )}
           <div className={styles.top_menu}>
             <Link to="/">
-              <h1 >SUPERHEROS APP</h1>
+              <h1>SUPERHEROS APP</h1>
             </Link>
           </div>
         </Header>
