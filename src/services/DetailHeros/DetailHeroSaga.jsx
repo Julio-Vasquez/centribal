@@ -6,7 +6,6 @@ import { GET } from './../../common/api'
 
 function* FetchGetHero({ payload: { idHero } }) {
   const res = yield GET({ url: `/${idHero}` })
-  console.log(res)
   yield put(
     res?.ok && res?.status === 200
       ? getHeroSuccess({
