@@ -11,8 +11,10 @@ export const GET = async ({ url }) => {
     },
   })
     .then(async res => {
+      console.log(res.statusText !== 'OK')
       if (res.statusText !== 'OK') message.error(ErrorJson[res.status])
-      res.payload = await res.json()
+      else res.payload = await res.json()
+
       return res
     })
     .catch(error => message.error(error))

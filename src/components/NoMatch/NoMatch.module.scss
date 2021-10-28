@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  .content {
+    font-family: 'Bangers', cursive;
+    text-align: center;
+    .error_code {
+      font-size: 200px;
+      margin-bottom: 0;
+      text-shadow: 1px 1px #fff;
+    }
+    .error_sms {
+      font-size: 40px;
+      color: white;
+      text-shadow: 1px 1px #000;
+    }
+    h1,
+    h2 {
+      user-select: none;
+    }
+    .btn_home {
+      height: 42px;
+      width: 120px;
+      line-height: 21px;
+      font-size: 25px;
+      border-radius: 50px;
+      transition-delay: 0.05s 0.05s;
+      &:hover {
+        color: red;
+        background-color: white;
+      }
+    }
+  }
+}
+
+.bg_img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../assets/img/app/Perdido.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}

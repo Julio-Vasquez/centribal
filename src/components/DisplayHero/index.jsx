@@ -1,0 +1,1 @@
+export { DisplayHero } from './DisplayHero'
