@@ -19,8 +19,6 @@ const ListHeros = () => {
     reducer: Heros,
   })
 
-  console.log(loadingDataHeros)
-  console.log(dataHeros.length / 5)
   return loadingDataHeros || !successState ? (
     <Loading sms="Cargando" />
   ) : (
